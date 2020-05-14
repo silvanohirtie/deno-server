@@ -1,0 +1,32 @@
+#mainDiv{
+    margin: auto;
+    width: 40%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+}
+
+#links{
+    margin: auto;
+    width: 40%;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+}
+
+.floating {  
+    animation-name: floating;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 0px;
+    margin-top: 0px;
+}
+
+@keyframes floating {
+    from { transform: translate(0,  0px); }
+    65%  { transform: translate(0, 15px); }
+    to   { transform: translate(0, -0px); }    
+}
